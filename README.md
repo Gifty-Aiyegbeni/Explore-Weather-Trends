@@ -2,11 +2,17 @@
 
 ## What tools did you use for each step? 
 I extracted the data by writing an SQLqueryfor each of the data sets.
+
 The queries were;
+
 SELECT city.year as cyear, city.city, city.country, city.avg_temp as city_avg_temp, global.year as gyear, global.avg_temp as gavg_temp
+
 FROM city_data city, global_data global
+
 WHERE city.year = global.year
+
 AND city.city = 'lagos' Then I downloaded the extracted CSV file. 
+
 Afterwards, I used excel software to access the data. 
 
 ## How did you calculate the moving average? 
